@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #208af4;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+}
+
+nav {
+    display: flex;
+    gap: 200px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: flex;
+    padding-left: 300px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.perfil img {
+    width:  400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.perfil h1 {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 1.2;
+}

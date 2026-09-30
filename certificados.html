@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Moraes</title>
+    <link rel="stylesheet" href="certificados.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="certificados.html">Certificados</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <h1>Certificados:</h1>
+
+    <div class="certificados">
+
+        <button class="seta" onclick="anterior()">←</button>
+
+        <img id="certificado" src="" alt="Certificado">
+
+        <button class="seta" onclick="proximo()">→</button>
+
+    </div>
+
+    <script>
+
+        const certificados = [
+            "Captura de tela 2026-09-30 081903.png",
+            "Captura de tela 2026-09-30 082120.png"
+        ];
+
+        let atual = 0;
+
+        function proximo() {
+            atual++;
+
+            if (atual >= certificados.length) {
+                atual = 0;
+            }
+
+            document.getElementById("certificado").src = certificados[atual];
+        }
+
+        function anterior() {
+            atual--;
+
+            if (atual < 0) {
+                atual = certificados.length - 1;
+            }
+
+            document.getElementById("certificado").src = certificados[atual];
+        }
+
+    </script>
+
+</body>
+</html>
